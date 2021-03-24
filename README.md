@@ -17,10 +17,9 @@ Figure 1.
 **Build the PFG:**
 1: PFG is build on the top of Apache Storm. Make a .Jar file of the source and add to the directory of Apache Storm source files:
 **How to use: **
-Use the the custom stream grouping , i.e 
 
- ![alt text](builder.setBolt("zipfseconf-bolt", new zipFCountBolt(),20).
-                customGrouping("zipfist-bolt", new ProposedPartitioningScheme()).setNumTasks(50));
+builder.setBolt("zipfseconf-bolt", new zipFCountBolt(),20).
+                customGrouping("zipfist-bolt", new ProposedPartitioningScheme()).setNumTasks(50);
 **Contact:** 
 If you feel any problem please feel free to contact at adeelaslam@hust.edu.cn
 
