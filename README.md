@@ -1,7 +1,7 @@
 ## Pre-filtering Grouping:
 
 The pre-filtering grouping (PFG) dynamically monitors the items of a stream and greatly improves the accuracy of estimation by keeping the actual key-value pair for the frequent items. On one hand,
-to ensure better load balancing for the skewed data streams, the detected hot keys are directed to more than two processing elements randomly from the limited workers. On the other hand, for less frequent keys, the proposed scheme explores the principle of the power of two choices to distribute load
+to ensure better load balancing for the skewed data streams, the detected hot keys are directed to more than two processing elements randomly from the limited processing elements of distributed stream processing framework. On the other hand, for less frequent keys, the proposed scheme explores the principle of the power of two choices to distribute load
 ##  Introduction:
 
 With the rapid advancement and usage of Internet technologies, an increasingly large volume of data is generated daily with real-time processing requirements. In this context, DSPS have gained significant attention from both academia and industry due to the ability to process millions of records in milliseconds. Many enterprises and institutions are now using DSPS (e.g., Storm, Flink, and Spark Streaming) to carry out computations on a considerably large volume of streaming data. In a DSPS,a processing element (PE), also known as a task instance, uniquely identifies the source of data, processes it, and generates the output in a real time.
