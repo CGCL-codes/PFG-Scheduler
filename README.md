@@ -10,8 +10,8 @@ Identifying the frequent keys in a real-time data stream is the key to efficient
 
 To solve the aforementioned issue we propose a streaming algorithm and data partitioning strategy. Our pre-filtering approach consists of three layers. At the first layer, all data items pass through the initial filter, which keeps track of the actual items and their frequencies. The second layer consists of hash-based counters of the fixed size. Lastly, the third layer uses a small size count-min sketch, which is initiated when the second layer counters overflow. The PF considers both the actual keys and the size of counters to improve the accuracy of predicting hot items and reduces the miss-classification rate without using any additional space. Items are dynamically shifted between these layers depending on keys frequency. Small counters for cold items improves the memory efficiency and ensure proper utilization of allocated memory. The design of the study can be depicted through Figure 1.
 **Design of Study :**
- 
-![plot]()
+![dataarchitecture2](https://user-images.githubusercontent.com/71701753/112271378-172fd500-8c38-11eb-8b1b-c4315ca2ed6b.png)
+
 
 
 **Build the PFG:**
