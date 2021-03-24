@@ -15,7 +15,7 @@ To solve the aforementioned issue we propose a streaming algorithm and data part
 
 
 ## Build the PFG:
-1: PFG is build on the top of Apache Storm. Make a .Jar file of the source and add to the directory of Apache Storm source files:
+PFG is build on the top of Apache Storm. Make a .Jar file of the source and add to the directory of Apache Storm source files:
 ## How to use: 
 
 builder.setBolt("zipfseconf-bolt", new zipFCountBolt(),20).
@@ -25,7 +25,7 @@ If you feel any problem please feel free to contact at adeelaslam@hust.edu.cn
 ## Author and Copyright
 PFG is developed in Big Data Technology and System Lab, Services Computing Technology and System Lab, Cluster and Grid Computing Lab, School of computer Science and Technology, Huazhong University of Science and Technology, Wuhan, China by Adeel Aslam (adeelaslam@hust.edu.cn), Hanhua Chen (chen@hust.edu.cn), Hai Jin (hjin@hust.edu.cn)
 
-Copyright(C) 2021, STCS & CGCL and Huazhong University of Science and Technology.
+Copyright(C) 2020, STCS & CGCL and Huazhong University of Science and Technology.
 
 
 
