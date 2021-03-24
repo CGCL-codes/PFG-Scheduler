@@ -1,4 +1,4 @@
-##Pre-filtering Grouping:
+## Pre-filtering Grouping:
 
 The pre-filtering grouping (PFG) dynamically monitors the items of a stream and greatly improves the accuracy of estimation by keeping the actual key-value pair for the frequent items. On one hand,
 to ensure better load balancing for the skewed data streams, the detected hot keys are directed to more than two processing elements randomly from the limited workers. On the other hand, for less frequent keys, the proposed scheme explores the principle of the power of two choices to distribute load
